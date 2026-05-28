@@ -1,0 +1,21 @@
+{
+  "slug": "bookcart",
+  "title": "Bookcart",
+  "role": "Automação E2E (POM)",
+  "shortDesc": "Criação de testes E2E automatizados para uma aplicação de e-commerce aplicando o padrão Page Object Model (POM).",
+  "coverImage": "/images/projects/bookcart-cover.png",
+  "date": "2024",
+  "featured": true,
+  "tech": ["Cypress", "Mochawesome"],
+  "color": "#F4CDBC",
+  "icon": "Terminal",
+  "context": "Preencha com o contexto e objetivo do projeto Bookcart.",
+  "challenge": "Preencha com o principal desafio técnico enfrentado.",
+  "solution": "Preencha com a solução adotada para resolver o desafio.",
+  "metrics": [],
+  "learned": null,
+  "links": {
+    "github": "https://github.com/Ali-Maia/bookcart",
+    "demo": null
+  }
+}
