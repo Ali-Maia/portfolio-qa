@@ -1,0 +1,21 @@
+{
+  "slug": "estoque-teste",
+  "title": "Estoque-Teste",
+  "role": "Automação E2E",
+  "shortDesc": "Desenvolvimento de testes E2E e de performance para uma página Web de controle de estoque, validando regras de negócio.",
+  "coverImage": "/images/projects/estoque-teste-cover.png",
+  "date": "2024",
+  "featured": true,
+  "tech": ["Cypress", "K6"],
+  "color": "#D93635",
+  "icon": "Monitor",
+  "context": "Preencha com o contexto e objetivo do projeto Estoque-Teste.",
+  "challenge": "Preencha com o principal desafio técnico enfrentado.",
+  "solution": "Preencha com a solução adotada para resolver o desafio.",
+  "metrics": [],
+  "learned": null,
+  "links": {
+    "github": "https://github.com/Ali-Maia/estoque-teste",
+    "demo": null
+  }
+}
