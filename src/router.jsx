@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import ProjectsList from './pages/ProjectsList'
@@ -16,6 +16,7 @@ const router = createBrowserRouter([
       { path: 'projetos/:slug',    element: <ProjectDetail /> },
       { path: 'sobre',             element: <About /> },
       { path: 'contato',           element: <Contact /> },
+      { path: '*',                 element: <Navigate to="/" replace /> },
     ],
   },
 ])

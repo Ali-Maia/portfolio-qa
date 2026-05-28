@@ -13,7 +13,7 @@ const ProjectDetail = () => {
 
   const {
     title, role, tech, color, coverImage, date,
-    context, challenge, solution, metrics, learned, links,
+    context, challenge, solution, metrics, learned, links = {},
   } = project
 
   return (
@@ -50,7 +50,7 @@ const ProjectDetail = () => {
       <h1 className="text-4xl md:text-5xl font-black uppercase mb-3">{title}</h1>
       <p className="text-[#D93635] font-bold uppercase tracking-wider mb-4">{role}</p>
       <div className="flex flex-wrap gap-2 mb-10">
-        {tech.map(t => (
+        {(tech ?? []).map(t => (
           <span key={t} className="bg-[#181818] text-[#F5F1DF] font-bold px-3 py-1 text-sm">
             {t}
           </span>
