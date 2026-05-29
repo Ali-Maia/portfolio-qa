@@ -6,7 +6,7 @@
   "coverImage": "/images/projects/organo-test-robot-cover.png",
   "date": "2024",
   "featured": false,
-  "tech": ["Robot Framework", "SeleniumLibrary"],
+  "tech": ["Robot Framework", "Selenium Library"],
   "color": "#D93635",
   "icon": "Terminal",
   "context": "O Organo é uma aplicação React para organização de equipes por times. O projeto consistiu em automatizar os fluxos de criação de cards de colaboradores, verificando tanto cenários de sucesso quanto de falha no preenchimento do formulário.",

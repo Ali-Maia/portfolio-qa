@@ -2,25 +2,25 @@ import { Link } from 'react-router-dom'
 import { Terminal, Monitor, Smartphone } from 'lucide-react'
 
 const ICONS = {
-  Terminal: <Terminal className="w-16 h-16 text-[#181818]" strokeWidth={2} />,
-  Monitor:  <Monitor  className="w-16 h-16 text-[#181818]" strokeWidth={2} />,
-  Smartphone: <Smartphone className="w-16 h-16 text-[#181818]" strokeWidth={2} />,
+  Terminal:   <Terminal   className="w-16 h-16 text-[#181818] dark:text-[#F5F1DF]" strokeWidth={2} />,
+  Monitor:    <Monitor    className="w-16 h-16 text-[#181818] dark:text-[#F5F1DF]" strokeWidth={2} />,
+  Smartphone: <Smartphone className="w-16 h-16 text-[#181818] dark:text-[#F5F1DF]" strokeWidth={2} />,
 }
 
-const brutalistBorder = 'border-4 border-[#181818]'
-const brutalistShadow = 'shadow-[6px_6px_0px_#181818]'
+const brutalistBorder = 'border-4 border-[#181818] dark:border-[#F5F1DF]'
+const brutalistShadow = 'shadow-[6px_6px_0px_#181818] dark:shadow-[6px_6px_0px_#F5F1DF]'
 const brutalistHover  =
-  'transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_#181818]'
+  'transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_#181818] dark:hover:shadow-[10px_10px_0px_#F5F1DF]'
 const brutalistBox = `${brutalistBorder} ${brutalistShadow}`
 
 const ProjectCard = ({ project }) => {
   const { slug, title, role, shortDesc, tech, color, coverImage, date, icon } = project
 
   return (
-    <div className={`bg-white flex flex-col ${brutalistBox} ${brutalistHover}`}>
+    <div className={`bg-white dark:bg-[#1E1E1E] flex flex-col ${brutalistBox} ${brutalistHover}`}>
       {/* Card header */}
       <div
-        className="h-40 border-b-4 border-[#181818] flex items-center justify-center p-4 relative overflow-hidden"
+        className="h-40 border-b-4 border-[#181818] dark:border-[#F5F1DF] flex items-center justify-center p-4 relative overflow-hidden"
         style={{ backgroundColor: color }}
       >
         {coverImage ? (
@@ -35,13 +35,13 @@ const ProjectCard = ({ project }) => {
         )}
 
         {/* Tech badge */}
-        <div className={`bg-white px-4 py-2 font-black uppercase text-sm absolute bottom-4 right-4 ${brutalistBox}`}>
+        <div className={`bg-white dark:bg-[#1E1E1E] dark:text-[#F5F1DF] px-4 py-2 font-black uppercase text-sm absolute bottom-4 right-4 ${brutalistBox}`}>
           {tech.join(' · ')}
         </div>
 
         {/* Date badge */}
         {date && (
-          <div className="bg-white border-2 border-[#181818] px-2 py-1 text-xs font-bold absolute top-4 right-4">
+          <div className="bg-white dark:bg-[#1E1E1E] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#F5F1DF] px-2 py-1 text-xs font-bold absolute top-4 right-4">
             {date}
           </div>
         )}
@@ -54,7 +54,7 @@ const ProjectCard = ({ project }) => {
         <p className="font-medium mb-6 flex-1">{shortDesc}</p>
         <Link
           to={`/projetos/${slug}`}
-          className={`w-full bg-[#F5F1DF] text-center font-black uppercase py-2 ${brutalistBox} hover:bg-[#DBA538] transition-colors block`}
+          className={`w-full bg-[#F5F1DF] dark:bg-[#262626] dark:text-[#F5F1DF] text-center font-black uppercase py-2 ${brutalistBox} hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors block`}
         >
           Ver case →
         </Link>

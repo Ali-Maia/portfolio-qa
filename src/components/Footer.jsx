@@ -2,7 +2,7 @@ import { Mail } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => (
-  <footer className="bg-[#181818] text-[#F5F1DF] border-t-4 border-[#181818] mt-auto">
+  <footer className="bg-[#181818] text-[#F5F1DF] border-t-4 border-[#181818] dark:border-[#F5F1DF] mt-auto">
     <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
       {/* Nome e tagline */}
       <div className="text-center md:text-left">

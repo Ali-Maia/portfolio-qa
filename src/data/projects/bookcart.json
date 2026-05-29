@@ -4,7 +4,7 @@
   "role": "Automação E2E (POM)",
   "shortDesc": "Criação de testes E2E automatizados para uma aplicação de e-commerce aplicando o padrão Page Object Model (POM).",
   "coverImage": "/images/projects/bookcart-cover.png",
-  "date": "2024",
+  "date": "2025",
   "featured": true,
   "tech": ["Cypress", "Mochawesome", "Faker.js"],
   "color": "#F4CDBC",

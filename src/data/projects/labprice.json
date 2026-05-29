@@ -4,7 +4,7 @@
   "role": "QA & Automação de Testes",
   "shortDesc": "Planejamento e automação de testes para uma API RESTful de precificação de peças 3D, cobrindo autenticação JWT, cálculo de custos e catálogo de produtos.",
   "coverImage": "/images/projects/labprice-cover.png",
-  "date": "2025",
+  "date": "2026",
   "featured": true,
   "tech": ["Cypress", "Swagger", "Node.js", "Express"],
   "color": "#DBA538",
