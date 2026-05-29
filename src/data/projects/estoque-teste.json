@@ -4,18 +4,18 @@
   "role": "Automação E2E",
   "shortDesc": "Desenvolvimento de testes E2E e de performance para uma página Web de controle de estoque, validando regras de negócio.",
   "coverImage": "/images/projects/estoque-teste-cover.png",
-  "date": "2024",
+  "date": "2025",
   "featured": true,
   "tech": ["Cypress", "K6"],
   "color": "#D93635",
   "icon": "Monitor",
-  "context": "Preencha com o contexto e objetivo do projeto Estoque-Teste.",
-  "challenge": "Preencha com o principal desafio técnico enfrentado.",
-  "solution": "Preencha com a solução adotada para resolver o desafio.",
+  "context": "O Estoque-Teste é uma aplicação Web de controle de estoque. O projeto teve como objetivo validar as regras de negócio críticas da plataforma e garantir que o sistema suportasse carga sem degradar a experiência do usuário.",
+  "challenge": "Cobrir tanto a correção funcional dos fluxos de CRUD de estoque quanto a estabilidade sob carga, utilizando ferramentas distintas integradas em uma estratégia de testes coesa.",
+  "solution": "Implementação de testes E2E com Cypress para validação dos fluxos funcionais e das regras de negócio, combinada com testes de performance com K6 para análise de carga e identificação de gargalos de desempenho.",
   "metrics": [],
   "learned": null,
   "links": {
     "github": "https://github.com/Ali-Maia/estoque-teste",
-    "demo": null
+    "demo": "https://ali-maia.github.io/estoque-web/"
   }
 }

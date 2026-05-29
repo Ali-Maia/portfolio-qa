@@ -1,0 +1,21 @@
+{
+  "slug": "labprice",
+  "title": "LabPrice",
+  "role": "QA & Automação de Testes",
+  "shortDesc": "Planejamento e automação de testes para uma API RESTful de precificação de peças 3D, cobrindo autenticação JWT, cálculo de custos e catálogo de produtos.",
+  "coverImage": "/images/projects/labprice-cover.png",
+  "date": "2026",
+  "featured": true,
+  "tech": ["Cypress", "Swagger", "Node.js", "Express"],
+  "color": "#DBA538",
+  "icon": "Terminal",
+  "context": "O LabPrice é uma API RESTful (Node.js + Express) que automatiza o cálculo de custos de impressão 3D — considerando material, energia, depreciação, risco e pós-processamento — e gerencia um catálogo de produtos com recálculo automático. O projeto precisava de uma estratégia de testes robusta que cobrisse tanto os contratos da API quanto a interface.",
+  "challenge": "Garantir a confiabilidade das fórmulas de precificação e dos fluxos de autenticação JWT em uma API sem banco de dados persistente, além de documentar cenários de teste de forma estruturada para toda a equipe.",
+  "solution": "Elaboração de casos de teste detalhados para autenticação, cálculo de orçamento, catálogo e front-end. Automação com Cypress cobrindo testes de API via cy.request() e testes E2E de UI, validando os fluxos críticos de login, orçamento e gestão de produtos.",
+  "metrics": [],
+  "learned": null,
+  "links": {
+    "github": "https://github.com/Ali-Maia/labprice",
+    "demo": null
+  }
+}

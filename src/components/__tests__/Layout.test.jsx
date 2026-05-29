@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { createMemoryRouter, RouterProvider } from 'react-router-dom'
 import Layout from '../Layout'
+import { ThemeProvider } from '../../context/ThemeContext'
 
 const renderLayout = (initialPath = '/') => {
   const router = createMemoryRouter(
@@ -16,7 +17,7 @@ const renderLayout = (initialPath = '/') => {
     }],
     { initialEntries: [initialPath] }
   )
-  return render(<RouterProvider router={router} />)
+  return render(<ThemeProvider><RouterProvider router={router} /></ThemeProvider>)
 }
 
 test('renders the browser URL bar', () => {

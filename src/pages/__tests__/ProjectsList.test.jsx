@@ -10,11 +10,12 @@ test('renders page heading', () => {
   expect(screen.getByRole('heading', { name: /projetos/i })).toBeInTheDocument()
 })
 
-test('renders all three projects', () => {
+test('renders all projects', () => {
   renderList()
   expect(screen.getByText('Bookcart')).toBeInTheDocument()
   expect(screen.getByText('Estoque-Teste')).toBeInTheDocument()
-  expect(screen.getByText('Guia Castanhal Online')).toBeInTheDocument()
+  expect(screen.getByText('LabPrice')).toBeInTheDocument()
+  expect(screen.getByText('Castanhal On')).toBeInTheDocument()
 })
 
 test('each project card links to its detail page', () => {
@@ -23,5 +24,6 @@ test('each project card links to its detail page', () => {
   const hrefs = links.map(l => l.getAttribute('href'))
   expect(hrefs).toContain('/projetos/bookcart')
   expect(hrefs).toContain('/projetos/estoque-teste')
+  expect(hrefs).toContain('/projetos/labprice')
   expect(hrefs).toContain('/projetos/guia-castanhal')
 })

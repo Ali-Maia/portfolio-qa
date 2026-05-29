@@ -1,0 +1,21 @@
+{
+  "slug": "organo-test-robot",
+  "title": "Organo Test Robot",
+  "role": "Automação E2E",
+  "shortDesc": "Testes automatizados com Robot Framework para a aplicação Organo, validando a criação de cards de colaboradores e a organização por times.",
+  "coverImage": "/images/projects/organo-test-robot-cover.png",
+  "date": "2024",
+  "featured": false,
+  "tech": ["Robot Framework", "Selenium Library"],
+  "color": "#D93635",
+  "icon": "Terminal",
+  "context": "O Organo é uma aplicação React para organização de equipes por times. O projeto consistiu em automatizar os fluxos de criação de cards de colaboradores, verificando tanto cenários de sucesso quanto de falha no preenchimento do formulário.",
+  "challenge": "Escrever testes expressivos e legíveis usando a sintaxe Gherkin do Robot Framework, organizando recursos reutilizáveis com Page Object para manter a suíte escalável.",
+  "solution": "Estruturação da suíte com separação entre resources (Page Objects e keywords compartilhadas) e tests, cobrindo preenchimento correto e incorreto do formulário, além de validar a inserção de cards em cada time disponível.",
+  "metrics": [],
+  "learned": null,
+  "links": {
+    "github": "https://github.com/Ali-Maia/organo-test-robot",
+    "demo": null
+  }
+}
