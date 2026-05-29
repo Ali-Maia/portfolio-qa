@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { Mail, Folder, User, Home } from 'lucide-react'
+import Footer from './Footer'
 
 const brutalistBorder = 'border-4 border-[#181818]'
 const brutalistShadow = 'shadow-[6px_6px_0px_#181818]'
@@ -13,7 +14,7 @@ const navLinkClass = ({ isActive }) =>
   }`
 
 const Layout = () => (
-  <div className="min-h-screen bg-[#F5F1DF] text-[#181818] font-sans selection:bg-[#DBA538] selection:text-[#181818]">
+  <div className="min-h-screen bg-[#F5F1DF] text-[#181818] font-sans selection:bg-[#DBA538] selection:text-[#181818] flex flex-col">
     {/* Fake browser header */}
     <div className={`bg-[#F5F1DF] ${brutalistBorder} border-t-0 border-l-0 border-r-0 border-b-4 flex items-center px-4 py-2 sticky top-0 z-50`}>
       <div className="flex gap-2 mr-6">
@@ -43,6 +44,7 @@ const Layout = () => (
     </nav>
 
     <Outlet />
+    <Footer />
   </div>
 )
 

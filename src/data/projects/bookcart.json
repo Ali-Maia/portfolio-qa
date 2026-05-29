@@ -6,16 +6,16 @@
   "coverImage": "/images/projects/bookcart-cover.png",
   "date": "2024",
   "featured": true,
-  "tech": ["Cypress", "Mochawesome"],
+  "tech": ["Cypress", "Mochawesome", "Faker.js"],
   "color": "#F4CDBC",
   "icon": "Terminal",
-  "context": "Preencha com o contexto e objetivo do projeto Bookcart.",
-  "challenge": "Preencha com o principal desafio técnico enfrentado.",
-  "solution": "Preencha com a solução adotada para resolver o desafio.",
+  "context": "O Bookcart é uma aplicação de e-commerce de livros. O objetivo foi garantir a qualidade das funcionalidades principais — cadastro de usuário, navegação no catálogo, carrinho de compras e checkout — por meio de testes automatizados E2E.",
+  "challenge": "Estruturar uma suíte de testes escalável e de fácil manutenção para uma aplicação com múltiplos fluxos de usuário, evitando duplicação de código e frágil acoplamento com seletores da UI.",
+  "solution": "Aplicação do padrão Page Object Model (POM) para encapsular a interação com cada tela em classes dedicadas. Uso do Faker.js para geração de dados dinâmicos nos testes, aumentando a cobertura de cenários, e do Mochawesome para geração de relatórios visuais detalhados.",
   "metrics": [],
   "learned": null,
   "links": {
-    "github": "https://github.com/Ali-Maia/bookcart",
+    "github": "https://github.com/Ali-Maia/bookcart-automation",
     "demo": null
   }
 }

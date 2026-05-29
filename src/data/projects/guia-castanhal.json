@@ -1,10 +1,10 @@
 {
   "slug": "guia-castanhal",
-  "title": "Guia Castanhal Online",
+  "title": "Castanhal On",
   "role": "Responsável por QA / Testes",
   "shortDesc": "Planejamento e execução de testes manuais e automatizados para garantir a funcionalidade e usabilidade da plataforma.",
-  "coverImage": "/images/projects/guia-castanhal-cover.png",
-  "date": "2024",
+  "coverImage": "/images/projects/castanhal-on-cover.png",
+  "date": "2025",
   "featured": false,
   "tech": ["QA Manual", "Automação"],
   "color": "#DBA538",
@@ -16,6 +16,6 @@
   "learned": null,
   "links": {
     "github": null,
-    "demo": null
+    "demo": "https://castanhalon.com.br/"
   }
 }

@@ -11,9 +11,9 @@ test('renders Formação Acadêmica section heading', () => {
   expect(screen.getByRole('heading', { name: /formação acadêmica/i })).toBeInTheDocument()
 })
 
-test('renders Link JR experience entry', () => {
+test('renders LinkJr experience entry', () => {
   render(<About />)
-  expect(screen.getByText('Link JR')).toBeInTheDocument()
+  expect(screen.getByText(/linkjr/i)).toBeInTheDocument()
 })
 
 test('renders UFPA education entry', () => {

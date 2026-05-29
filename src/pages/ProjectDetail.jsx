@@ -35,7 +35,7 @@ const ProjectDetail = () => {
           <img
             src={coverImage}
             alt={title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
             onError={(e) => { e.currentTarget.style.display = 'none' }}
           />
         )}
@@ -114,7 +114,7 @@ const ProjectDetail = () => {
             rel="noreferrer"
             className={`${brutalistBox} bg-[#F5F1DF] font-black uppercase px-6 py-3 hover:bg-[#DBA538] transition-colors duration-150`}
           >
-            Demo →
+            Site do Projeto →
           </a>
         )}
       </div>
