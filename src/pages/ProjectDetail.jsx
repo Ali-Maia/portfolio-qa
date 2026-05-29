@@ -1,8 +1,8 @@
 import { useParams, Navigate, Link } from 'react-router-dom'
 import projects from '../data/projects/index.js'
 
-const brutalistBorder = 'border-4 border-[#181818] dark:border-[#F5F1DF]'
-const brutalistShadow = 'shadow-[4px_4px_0px_#181818] dark:shadow-[4px_4px_0px_#F5F1DF]'
+const brutalistBorder = 'border-4 border-[#181818] dark:border-[#050505]'
+const brutalistShadow = 'shadow-[4px_4px_0px_#181818] dark:shadow-[4px_4px_0px_#050505]'
 const brutalistBox = `${brutalistBorder} ${brutalistShadow}`
 
 const ProjectDetail = () => {
@@ -21,7 +21,7 @@ const ProjectDetail = () => {
       {/* Back button */}
       <Link
         to="/projetos"
-        className={`inline-flex items-center gap-2 ${brutalistBox} font-black uppercase px-4 py-2 mb-8 bg-[#F5F1DF] dark:bg-[#262626] dark:text-[#F5F1DF] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
+        className={`inline-flex items-center gap-2 ${brutalistBox} font-black uppercase px-4 py-2 mb-8 bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
       >
         ← Projetos
       </Link>
@@ -40,7 +40,7 @@ const ProjectDetail = () => {
           />
         )}
         {date && (
-          <div className="absolute top-4 right-4 bg-white dark:bg-[#262626] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#F5F1DF] px-3 py-1 text-sm font-bold">
+          <div className="absolute top-4 right-4 bg-white dark:bg-[#4A3528] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#050505] px-3 py-1 text-sm font-bold">
             {date}
           </div>
         )}
@@ -58,7 +58,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* Context */}
-      <div className={`bg-white dark:bg-[#262626] p-6 ${brutalistBox} mb-6`}>
+      <div className={`bg-white dark:bg-[#4A3528] p-6 ${brutalistBox} mb-6`}>
         <h2 className="text-xs font-black uppercase text-[#D93635] mb-2">Contexto</h2>
         <p className="font-medium leading-relaxed">{context}</p>
       </div>
@@ -69,7 +69,7 @@ const ProjectDetail = () => {
           <h2 className="text-xs font-black uppercase text-[#D93635] mb-2">Desafio</h2>
           <p className="font-medium leading-relaxed">{challenge}</p>
         </div>
-        <div className="border-4 border-[#DBA538] bg-[#F4CDBC] dark:bg-[#2D1C14] p-6">
+        <div className="border-4 border-[#DBA538] bg-[#F4CDBC] dark:bg-[#4A3528] p-6">
           <h2 className="text-xs font-black uppercase text-[#A81C24] mb-2">Solução</h2>
           <p className="font-medium leading-relaxed">{solution}</p>
         </div>
@@ -112,7 +112,7 @@ const ProjectDetail = () => {
             href={links.demo}
             target="_blank"
             rel="noreferrer"
-            className={`${brutalistBox} bg-[#F5F1DF] dark:bg-[#262626] dark:text-[#F5F1DF] font-black uppercase px-6 py-3 hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
+            className={`${brutalistBox} bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF] font-black uppercase px-6 py-3 hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
           >
             Site do Projeto →
           </a>

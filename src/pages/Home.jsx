@@ -6,10 +6,10 @@ import ProjectCard from '../components/ProjectCard'
 import projects from '../data/projects/index.js'
 import AvatarImg from '../assets/avatar.webp'
 
-const brutalistBorder = 'border-4 border-[#181818] dark:border-[#F5F1DF]'
-const brutalistShadow = 'shadow-[6px_6px_0px_#181818] dark:shadow-[6px_6px_0px_#F5F1DF]'
+const brutalistBorder = 'border-4 border-[#181818] dark:border-[#050505]'
+const brutalistShadow = 'shadow-[6px_6px_0px_#181818] dark:shadow-[6px_6px_0px_#050505]'
 const brutalistHover  =
-  'transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_#181818] dark:hover:shadow-[10px_10px_0px_#F5F1DF]'
+  'transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_#181818] dark:hover:shadow-[10px_10px_0px_#050505]'
 const brutalistBox = `${brutalistBorder} ${brutalistShadow}`
 const brutalistButton =
   `${brutalistBox} ${brutalistHover} font-black uppercase tracking-wider px-6 py-3 flex items-center gap-2 cursor-pointer`
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
 
         <div className="flex-1 w-full flex justify-center lg:justify-end relative">
-          <div className={`w-80 h-80 md:w-96 md:h-96 bg-[#F4CDBC] dark:bg-[#2D1C14] rounded-full ${brutalistBox} flex items-center justify-center relative overflow-hidden`}>
+          <div className={`w-80 h-80 md:w-96 md:h-96 bg-[#F4CDBC] dark:bg-[#4A3528] rounded-full ${brutalistBox} flex items-center justify-center relative overflow-hidden`}>
             <div className={`absolute -bottom-10 -right-10 w-40 h-40 bg-[#68412B] rounded-full ${brutalistBorder}`} />
             <div className={`absolute top-10 -left-10 w-20 h-20 bg-[#A81C24] ${brutalistBorder} rotate-12`} />
             <img src={AvatarImg} alt="Avatar Alícia Maia" className="w-full h-full object-cover scale-110" />
@@ -97,7 +97,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center">
-            <Link to="/projetos" className={`${brutalistButton} inline-flex mx-auto bg-[#F5F1DF] dark:bg-[#262626] dark:text-[#F5F1DF]`}>
+            <Link to="/projetos" className={`${brutalistButton} inline-flex mx-auto bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF]`}>
               Ver todos os projetos →
             </Link>
           </div>
