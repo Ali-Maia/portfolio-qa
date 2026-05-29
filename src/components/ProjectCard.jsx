@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
   const { slug, title, role, shortDesc, tech, color, coverImage, date, icon } = project
 
   return (
-    <div className={`bg-white dark:bg-[#4A3528] flex flex-col ${brutalistBox} ${brutalistHover}`}>
+    <div className={`bg-white dark:bg-[#3D3934] flex flex-col ${brutalistBox} ${brutalistHover}`}>
       {/* Card header */}
       <div
         className="h-40 border-b-4 border-[#181818] dark:border-[#050505] flex items-center justify-center p-4 relative overflow-hidden"
@@ -35,13 +35,13 @@ const ProjectCard = ({ project }) => {
         )}
 
         {/* Tech badge */}
-        <div className={`bg-white dark:bg-[#4A3528] dark:text-[#F5F1DF] px-4 py-2 font-black uppercase text-sm absolute bottom-4 right-4 ${brutalistBox}`}>
+        <div className={`bg-white dark:bg-[#3D3934] dark:text-[#F5F1DF] px-4 py-2 font-black uppercase text-sm absolute bottom-4 right-4 ${brutalistBox}`}>
           {tech.join(' · ')}
         </div>
 
         {/* Date badge */}
         {date && (
-          <div className="bg-white dark:bg-[#4A3528] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#050505] px-2 py-1 text-xs font-bold absolute top-4 right-4">
+          <div className="bg-white dark:bg-[#3D3934] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#050505] px-2 py-1 text-xs font-bold absolute top-4 right-4">
             {date}
           </div>
         )}

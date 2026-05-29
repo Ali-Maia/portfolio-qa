@@ -21,7 +21,7 @@ const ProjectDetail = () => {
       {/* Back button */}
       <Link
         to="/projetos"
-        className={`inline-flex items-center gap-2 ${brutalistBox} font-black uppercase px-4 py-2 mb-8 bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
+        className={`inline-flex items-center gap-2 ${brutalistBox} font-black uppercase px-4 py-2 mb-8 bg-[#F5F1DF] dark:bg-[#3D3934] dark:text-[#F5F1DF] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
       >
         ← Projetos
       </Link>
@@ -40,7 +40,7 @@ const ProjectDetail = () => {
           />
         )}
         {date && (
-          <div className="absolute top-4 right-4 bg-white dark:bg-[#4A3528] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#050505] px-3 py-1 text-sm font-bold">
+          <div className="absolute top-4 right-4 bg-white dark:bg-[#3D3934] dark:text-[#F5F1DF] border-2 border-[#181818] dark:border-[#050505] px-3 py-1 text-sm font-bold">
             {date}
           </div>
         )}
@@ -58,14 +58,14 @@ const ProjectDetail = () => {
       </div>
 
       {/* Context */}
-      <div className={`bg-white dark:bg-[#4A3528] p-6 ${brutalistBox} mb-6`}>
+      <div className={`bg-white dark:bg-[#3D3934] p-6 ${brutalistBox} mb-6`}>
         <h2 className="text-xs font-black uppercase text-[#D93635] mb-2">Contexto</h2>
         <p className="font-medium leading-relaxed">{context}</p>
       </div>
 
       {/* Challenge / Solution */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div className="border-4 border-[#D93635] p-6">
+        <div className="border-4 border-[#D93635] dark:bg-[#4C2A2A] p-6">
           <h2 className="text-xs font-black uppercase text-[#D93635] mb-2">Desafio</h2>
           <p className="font-medium leading-relaxed">{challenge}</p>
         </div>
@@ -112,7 +112,7 @@ const ProjectDetail = () => {
             href={links.demo}
             target="_blank"
             rel="noreferrer"
-            className={`${brutalistBox} bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF] font-black uppercase px-6 py-3 hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
+            className={`${brutalistBox} bg-[#F5F1DF] dark:bg-[#3D3934] dark:text-[#F5F1DF] font-black uppercase px-6 py-3 hover:bg-[#DBA538] dark:hover:bg-[#DBA538] dark:hover:text-[#181818] transition-colors duration-150`}
           >
             Site do Projeto →
           </a>

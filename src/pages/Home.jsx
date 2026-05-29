@@ -97,7 +97,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center">
-            <Link to="/projetos" className={`${brutalistButton} inline-flex mx-auto bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF]`}>
+            <Link to="/projetos" className={`${brutalistButton} inline-flex mx-auto bg-[#F5F1DF] dark:bg-[#3D3934] dark:text-[#F5F1DF]`}>
               Ver todos os projetos →
             </Link>
           </div>

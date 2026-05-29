@@ -74,7 +74,7 @@ const About = () => (
             <div key={idx} className={`bg-[#F4CDBC] dark:bg-[#4A3528] p-6 ${brutalistBox}`}>
               <h3 className="text-xl font-black uppercase">{exp.role}</h3>
               <h4 className="font-bold text-[#A81C24] text-lg mb-2">{exp.company}</h4>
-              <div className="inline-block bg-white dark:bg-[#4A3528] border-2 border-[#181818] dark:border-[#050505] px-2 py-1 text-xs font-bold mb-3">
+              <div className="inline-block bg-white dark:bg-[#3D3934] border-2 border-[#181818] dark:border-[#050505] px-2 py-1 text-xs font-bold mb-3">
                 {exp.period}
               </div>
               <p className="font-medium">{exp.desc}</p>
@@ -93,7 +93,7 @@ const About = () => (
           </div>
           <div className="space-y-6">
             {education.map((edu, idx) => (
-              <div key={idx} className={`bg-[#F5F1DF] dark:bg-[#4A3528] p-6 ${brutalistBox}`}>
+              <div key={idx} className={`bg-[#F5F1DF] dark:bg-[#3D3934] p-6 ${brutalistBox}`}>
                 <h3 className="text-xl font-black uppercase">{edu.course}</h3>
                 <h4 className="font-bold text-[#A81C24] text-lg mb-2">{edu.institution}</h4>
                 <p className="font-medium">{edu.detail}</p>
@@ -110,7 +110,7 @@ const About = () => (
           </div>
           <div className="space-y-4">
             {certifications.map((cert, idx) => (
-              <div key={idx} className={`bg-[#F5F1DF] dark:bg-[#4A3528] p-4 ${brutalistBox} flex items-start gap-4`}>
+              <div key={idx} className={`bg-[#F5F1DF] dark:bg-[#4C2A2A] p-4 ${brutalistBox} flex items-start gap-4`}>
                 <div className="bg-[#181818] text-[#DBA538] font-black text-xs px-2 py-1 shrink-0">{cert.year}</div>
                 <div>
                   <h3 className="font-black uppercase text-base">{cert.title}</h3>

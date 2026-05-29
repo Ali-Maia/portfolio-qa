@@ -13,7 +13,7 @@ const navLinkClass = ({ isActive }) =>
   `${brutalistBox} ${brutalistHover} font-black uppercase tracking-wider px-6 py-3 flex items-center gap-2 cursor-pointer ${
     isActive
       ? 'bg-[#DBA538] text-[#181818]'
-      : 'bg-[#F5F1DF] dark:bg-[#4A3528] dark:text-[#F5F1DF]'
+      : 'bg-[#F5F1DF] dark:bg-[#3D3934] dark:text-[#F5F1DF]'
   }`
 
 const Layout = () => {
@@ -28,13 +28,13 @@ const Layout = () => {
           <div className="w-4 h-4 rounded-full bg-[#DBA538] border-2 border-[#181818] dark:border-[#050505]" />
           <div className="w-4 h-4 rounded-full bg-[#A81C24] border-2 border-[#181818] dark:border-[#050505]" />
         </div>
-        <div className="flex-1 bg-white dark:bg-[#4A3528] border-4 border-[#181818] dark:border-[#050505] h-8 flex items-center px-4 mx-4">
+        <div className="flex-1 bg-white dark:bg-[#3D3934] border-4 border-[#181818] dark:border-[#050505] h-8 flex items-center px-4 mx-4">
           <span className="font-bold text-sm dark:text-[#F5F1DF]">https://aliciamaia.qa</span>
         </div>
         <button
           onClick={toggleTheme}
           aria-label={isDark ? 'Ativar modo claro' : 'Ativar modo escuro'}
-          className="ml-4 p-2 border-4 border-[#181818] dark:border-[#050505] bg-[#F5F1DF] dark:bg-[#4A3528] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] transition-colors cursor-pointer"
+          className="ml-4 p-2 border-4 border-[#181818] dark:border-[#050505] bg-[#F5F1DF] dark:bg-[#3D3934] hover:bg-[#DBA538] dark:hover:bg-[#DBA538] transition-colors cursor-pointer"
         >
           {isDark
             ? <Sun className="w-4 h-4 text-[#F5F1DF] dark:text-[#F5F1DF]" />
