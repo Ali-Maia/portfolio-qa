@@ -1,0 +1,21 @@
+{
+  "slug": "test-adopet",
+  "title": "Test Adopet",
+  "role": "Automação E2E",
+  "shortDesc": "Suíte de testes automatizados com Cypress para a plataforma de adoção de animais Adopet, cobrindo cadastro, login, navegação e validação de erros.",
+  "coverImage": "/images/projects/test-adopet-cover.png",
+  "date": "2024",
+  "featured": false,
+  "tech": ["Cypress", "GitHub Actions"],
+  "color": "#F4CDBC",
+  "icon": "Monitor",
+  "context": "O Adopet é uma plataforma web de adoção de animais. O projeto teve como objetivo automatizar os principais fluxos críticos da aplicação para garantir a integridade funcional a cada nova versão.",
+  "challenge": "Cobrir os fluxos de cadastro, autenticação e navegação de forma robusta, além de garantir que mensagens de erro adequadas fossem exibidas para entradas inválidas — tudo integrado a um pipeline de CI.",
+  "solution": "Automação E2E com Cypress estruturada por fluxo de usuário, com integração contínua via GitHub Actions para execução automática dos testes a cada push no repositório.",
+  "metrics": [],
+  "learned": null,
+  "links": {
+    "github": "https://github.com/Ali-Maia/test-adopet",
+    "demo": null
+  }
+}
