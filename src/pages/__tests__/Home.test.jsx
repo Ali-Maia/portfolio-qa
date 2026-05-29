@@ -12,7 +12,7 @@ test('renders hero heading with name', () => {
 
 test('renders role badges', () => {
   renderHome()
-  expect(screen.getByText(/qa engineer/i)).toBeInTheDocument()
+  expect(screen.getByText(/analista de qa/i)).toBeInTheDocument()
   expect(screen.getAllByText(/automação/i).length).toBeGreaterThan(0)
 })
 
