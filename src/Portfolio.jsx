@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Folder, User, Terminal, Star, Bug, Monitor, CheckCircle, Smartphone } from 'lucide-react';
+import { Mail, Folder, User, Terminal, Star, Monitor, Smartphone } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import AvatarImg from './assets/avatar.png'
 
@@ -158,17 +158,6 @@ const Portfolio = () => {
             </React.Fragment>
           ))}
         </div>
-        {/* Simple CSS block for marquee animation (would normally be in global css) */}
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-marquee {
-            animation: marquee 20s linear infinite;
-            min-width: 200%;
-          }
-        `}} />
       </div>
 
       {/* Projects Section */}
@@ -181,7 +170,7 @@ const Portfolio = () => {
           <div className="h-2 flex-1 bg-[#181818]"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((proj, idx) => (
             <div key={idx} className={`bg-white flex flex-col ${brutalistBox} ${brutalistHover}`}>
               {/* Card Header Color Block */}
