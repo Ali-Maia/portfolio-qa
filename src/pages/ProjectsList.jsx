@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { Lock } from 'lucide-react'
 import projects from '../data/projects/index.js'
 import ProjectCard from '../components/ProjectCard'
 
@@ -15,6 +17,19 @@ const ProjectsList = () => (
         <ProjectCard key={project.slug} project={project} />
       ))}
     </div>
+
+      {/* Easter egg — acesso a projetos de cibersegurança */}
+<Link
+  to="/cyberseguranca"
+  title="acesso restrito"
+  className="group fixed bottom-6 right-6 z-20 flex items-center gap-2 bg-[#F5F1DF] dark:bg-[#3D3934] text-[#181818] dark:text-[#39FF88] border-2 border-[#181818] dark:border-[#050505] px-3 py-2 shadow-[3px_3px_0px_#39FF88] transition-transform hover:-translate-y-0.5 hover:-translate-x-0.5"
+>
+  <Lock size={16} className="animate-pulse" />
+  <span className="max-w-0 overflow-hidden whitespace-nowrap font-mono text-xs group-hover:max-w-xs group-hover:ml-1 transition-all duration-300">
+    acesso_restrito.sh
+  </span>
+</Link>
+
   </section>
 )
 
