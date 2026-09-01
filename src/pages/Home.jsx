@@ -46,7 +46,7 @@ const Home = () => {
             </span>
           </div>
           <p className="text-xl md:text-2xl font-bold max-w-lg mb-8 leading-snug">
-            Transformando qualidade em cultura estratégica. Do planejamento e testes manuais à automação e análise de métricas de desempenho.
+            Encontrando bugs antes que eles encontrem seus usuários.
           </p>
           <div className="flex gap-4">
             <a href="https://github.com/Ali-Maia" target="_blank" rel="noreferrer"
