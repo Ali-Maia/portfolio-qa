@@ -6,6 +6,7 @@
   "coverImage": "/images/projects/test-adopet-cover.png",
   "date": "2024",
   "featured": false,
+  "tags": ["QA"],
   "tech": ["Cypress", "GitHub Actions"],
   "color": "#F4CDBC",
   "icon": "Monitor",

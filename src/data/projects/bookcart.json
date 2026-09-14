@@ -6,6 +6,7 @@
   "coverImage": "/images/projects/bookcart-cover.png",
   "date": "2025",
   "featured": true,
+  "tags": ["QA"],
   "tech": ["Cypress", "Mochawesome", "Faker.js"],
   "color": "#F4CDBC",
   "icon": "Terminal",

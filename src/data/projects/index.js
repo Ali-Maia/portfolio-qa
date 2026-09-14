@@ -4,7 +4,16 @@ import guiaCastanhal from './guia-castanhal.json'
 import labprice from './labprice.json'
 import testAdopet from './test-adopet.json'
 import organoTestRobot from './organo-test-robot.json'
+import comunicacaoRedesAbc from './comunicacao-redes-abc.json'
 
-const projects = [estoqueTeste, bookcart, labprice, guiaCastanhal, testAdopet, organoTestRobot]
+const projects = [
+	estoqueTeste,
+	bookcart,
+	labprice,
+	guiaCastanhal,
+	testAdopet,
+	organoTestRobot,
+	comunicacaoRedesAbc,
+]
 
 export default projects

@@ -6,6 +6,7 @@
   "coverImage": "/images/projects/estoque-teste-cover.png",
   "date": "2025",
   "featured": true,
+  "tags": ["QA"],
   "tech": ["Cypress", "K6"],
   "color": "#D93635",
   "icon": "Monitor",

@@ -13,8 +13,13 @@ const brutalistHover  =
   'transition-transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_#181818] dark:hover:shadow-[10px_10px_0px_#050505]'
 const brutalistBox = `${brutalistBorder} ${brutalistShadow}`
 
+const TAG_STYLES = {
+  QA: 'bg-[#DBA538] text-[#181818]',
+  Cybersegurança: 'bg-[#39FF88] text-[#181818]',
+}
+
 const ProjectCard = ({ project }) => {
-  const { slug, title, role, shortDesc, tech, color, coverImage, date, icon } = project
+  const { slug, title, role, shortDesc, tech, color, coverImage, date, icon, tags = [] } = project
 
   return (
     <div className={`bg-white dark:bg-[#3D3934] flex flex-col ${brutalistBox} ${brutalistHover}`}>
@@ -32,6 +37,19 @@ const ProjectCard = ({ project }) => {
           />
         ) : (
           ICONS[icon] ?? ICONS.Terminal
+        )}
+
+        {tags.length > 0 && (
+          <div className="absolute top-3 left-3 flex flex-wrap gap-1.5 max-w-[70%]">
+            {tags.map(tag => (
+              <span
+                key={tag}
+                className={`border-2 border-[#181818] dark:border-[#050505] px-2 py-1 text-[10px] font-black uppercase leading-none shadow-[2px_2px_0px_#181818] ${TAG_STYLES[tag] ?? 'bg-[#F5F1DF] text-[#181818]'}`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         )}
 
         {/* Tech badge */}

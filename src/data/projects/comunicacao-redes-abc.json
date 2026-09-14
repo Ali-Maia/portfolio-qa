@@ -1,0 +1,22 @@
+{
+  "slug": "comunicacao-redes-abc",
+  "title": "Comunicação entre as Redes A, B e C",
+  "role": "Laboratório de Redes e Cibersegurança",
+  "shortDesc": "Topologia criada no Cisco Packet Tracer para conectar três redes locais por meio de um roteador e validar a comunicação entre dispositivos de redes distintas.",
+  "coverImage": "https://raw.githubusercontent.com/Ali-Maia/estudos_cybersec/main/atividades_packetTracer/comunicacao_redes_abc/comunicacao_rede_abc.png",
+  "date": "2026",
+  "featured": false,
+  "tags": ["Cybersegurança"],
+  "tech": ["Cisco Packet Tracer", "IPv4"],
+  "color": "#39FF88",
+  "icon": "Terminal",
+  "context": "Atividade prática de redes desenvolvida no Cisco Packet Tracer para montar uma infraestrutura com três redes locais, distribuídas por switches e interligadas por um roteador.",
+  "challenge": "Configurar as interfaces do roteador, os endereços IPv4 e os gateways dos seis computadores para permitir a comunicação entre as redes A, B e C.",
+  "solution": "Montagem da topologia com três switches, seis PCs e um roteador com três interfaces GigabitEthernet. Foram configuradas as redes 10.0.0.0, 172.16.0.0 e 192.168.1.0, seguidas de testes de conectividade entre computadores de redes diferentes no modo de simulação.",
+  "metrics": [],
+  "learned": "Pratiquei topologia de redes, comunicação em LAN, endereçamento IPv4, gateways, configuração de interfaces Cisco, função de switches e roteadores, roteamento entre redes e validação de pacotes.",
+  "links": {
+    "github": "https://github.com/Ali-Maia/estudos_cybersec/tree/main/atividades_packetTracer/comunicacao_redes_abc",
+    "demo": null
+  }
+}

@@ -6,6 +6,7 @@
   "coverImage": "/images/projects/organo-test-robot-cover.png",
   "date": "2024",
   "featured": false,
+  "tags": ["QA"],
   "tech": ["Robot Framework", "Selenium Library"],
   "color": "#D93635",
   "icon": "Terminal",

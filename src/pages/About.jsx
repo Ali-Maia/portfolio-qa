@@ -1,4 +1,6 @@
 import { Construction, HardHat } from 'lucide-react'
+import cybersecurityBadges from '../data/cybersecurity'
+import CybersecurityBadge from '../components/CybersecurityBadge'
 
 const brutalistBorder = 'border-4 border-[#181818] dark:border-[#050505]'
 const brutalistShadow = 'shadow-[4px_4px_0px_#181818] dark:shadow-[4px_4px_0px_#050505]'
@@ -18,10 +20,10 @@ const experiences = [
     desc: 'Liderança da estratégia de qualidade e automação da plataforma. Execução de testes manuais e automatizados com foco em estabilidade.',
   },
   {
-    role: 'Vice-presidente',
+    role: 'Voluntário - Vice-presidente',
     company: 'LinkJr (Empresa Júnior)',
     period: 'Agosto 2024 - Abril 2026',
-    desc: 'Gestão executiva de equipes e liderança de projetos com Cypress, React, Next.js e TypeScript. Condução de interações com clientes e suporte a equipes ágeis.',
+    desc: 'Gestão executiva de equipes e participação de projetos com Cypress, React, Next.js e TypeScript. Condução de interações com clientes e suporte a equipes ágeis.',
   },
   {
     role: 'Bolsista e Instrutora de Robótica',
@@ -104,6 +106,15 @@ const InProgress = () => (
           já virou peça fixa da minha rotina de estudos — essa seção vai crescendo conforme eu
           avanço.
         </p>
+
+        <div className="mt-8 border-t-4 border-[#181818] dark:border-[#050505] pt-6">
+          <h4 className="text-xl font-black uppercase mb-4">Emblemas conquistados</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {cybersecurityBadges.map(badge => (
+              <CybersecurityBadge key={badge.url} badge={badge} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -189,7 +200,7 @@ const About = () => (
         <div>
           <div className="inline-block mb-8">
             <h2 className="text-3xl font-black uppercase bg-[#D93635] text-[#F5F1DF] px-4 py-2 border-4 border-[#181818] shadow-[4px_4px_0px_#181818]">
-              Certificações
+              Cursos
             </h2>
           </div>
           <div className="space-y-4">

@@ -35,7 +35,7 @@ const ProjectDetail = () => {
           <img
             src={coverImage}
             alt={title}
-            className="w-full h-full object-cover "
+            className="w-full h-full object-contain p-2"
             onError={(e) => { e.currentTarget.style.display = 'none' }}
           />
         )}

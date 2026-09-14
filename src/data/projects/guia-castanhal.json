@@ -6,6 +6,7 @@
   "coverImage": "/images/projects/castanhal-on-cover.png",
   "date": "2026",
   "featured": false,
+  "tags": ["QA"],
   "tech": ["QA Manual", "Automação"],
   "color": "#DBA538",
   "icon": "Smartphone",

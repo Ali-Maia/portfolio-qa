@@ -1,65 +1,16 @@
 import { Link } from 'react-router-dom'
-import { ShieldCheck, Terminal, ArrowLeft } from 'lucide-react'
-
-const brutalistBorder = 'border-4 border-[#181818] dark:border-[#050505]'
-const brutalistShadow = 'shadow-[6px_6px_0px_#181818] dark:shadow-[6px_6px_0px_#050505]'
-const brutalistBox = `${brutalistBorder} ${brutalistShadow}`
-
-const cyberProjects = []
+import { ArrowLeft } from 'lucide-react'
+import CyberSecuritySection from '../components/CyberSecuritySection'
 
 const CyberSecurity = () => (
-  <section className="max-w-6xl mx-auto px-6 py-16 text-[#181818] dark:text-[#F5F1DF]">
+  <section className="max-w-6xl mx-auto px-6 py-16">
     <Link
       to="/projetos"
       className="inline-flex items-center gap-2 font-black uppercase text-sm mb-10 hover:underline"
     >
       <ArrowLeft size={18} /> Voltar aos projetos
     </Link>
-
-    <div className="flex items-center gap-4 mb-10">
-      <div className="h-2 flex-1 bg-[#181818] dark:bg-[#F5F1DF]" />
-      <h1 className="flex items-center gap-3 text-4xl md:text-5xl font-black uppercase text-center bg-[#181818] dark:bg-[#050505] text-[#39FF88] px-6 py-2 border-4 border-[#181818] dark:border-[#050505] shadow-[4px_4px_0px_#39FF88]">
-        <Terminal size={36} strokeWidth={2.5} />
-        Cibersegurança
-      </h1>
-      <div className="h-2 flex-1 bg-[#181818] dark:bg-[#F5F1DF]" />
-    </div>
-
-    <div
-      className={`relative overflow-hidden bg-[#F5F1DF] dark:bg-[#3D3934] p-8 mb-12 ${brutalistBox}`}
-    >
-      <div
-        className="absolute top-0 left-0 w-full h-3 border-b-4 border-[#181818] dark:border-[#050505]"
-        style={{
-          backgroundImage:
-            'repeating-linear-gradient(45deg, #39FF88 0, #39FF88 14px, #181818 14px, #181818 28px)',
-        }}
-      />
-
-      <div className="pt-4">
-        <div className="inline-flex items-center gap-2 bg-[#181818] dark:bg-[#050505] text-[#39FF88] font-black uppercase text-xs px-3 py-1 border-2 border-[#181818] dark:border-[#050505] mb-4 font-mono">
-          <ShieldCheck size={14} strokeWidth={2.5} />
-          acesso_liberado
-        </div>
-
-        <p className="font-medium text-lg leading-relaxed text-[#181818] dark:text-[#F5F1DF]">
-          Essa área ainda está sendo construída. Estou em imersão em cibersegurança pelo{' '}
-          <strong>Programa Mulher Digital (JA Brasil)</strong>, ampliando minha visão sobre
-          segurança de sistemas pra somar essa bagagem à minha atuação em QA. Assim que os
-          primeiros projetos e labs estiverem prontos, eles aparecem aqui.
-        </p>
-      </div>
-    </div>
-
-    {cyberProjects.length > 0 ? (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* mapear cyberProjects aqui quando existirem, reaproveitando o ProjectCard */}
-      </div>
-    ) : (
-      <div className={`text-center p-10 font-mono text-sm text-[#68412B] dark:text-[#F4CDBC] ${brutalistBox} bg-[#F5F1DF] dark:bg-[#3D3934]`}>
-        {'>'} nenhum projeto encontrado ainda... volte em breve.
-      </div>
-    )}
+    <CyberSecuritySection />
   </section>
 )
 
