@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import ProjectsList from './pages/ProjectsList'
@@ -6,6 +6,7 @@ import ProjectDetail from './pages/ProjectDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import CyberSecurity from './pages/CyberSecurity'
+import NotFound from './pages/NotFound'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       { path: 'sobre',             element: <About /> },
       { path: 'contato',           element: <Contact /> },
       { path: '/cyberseguranca',   element: <CyberSecurity /> },
-      { path: '*',                 element: <Navigate to="/" replace /> },
+      { path: '*',                 element: <NotFound /> },
     ],
   },
 ])

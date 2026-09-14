@@ -1,0 +1,7 @@
+export const responsiveShell = 'mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8'
+export const responsiveSection = 'mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8'
+export const responsiveTitle = 'text-3xl sm:text-4xl md:text-5xl font-black uppercase'
+export const responsiveSubtitle = 'text-2xl sm:text-3xl md:text-4xl font-black uppercase'
+export const responsiveGrid = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'
+export const responsiveStack = 'flex-col sm:flex-row'
+export const responsiveButtonRow = 'flex-col sm:flex-row gap-3 sm:gap-4'

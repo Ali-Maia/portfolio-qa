@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: light;
+  background-color: #F5F1DF;
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: #2C2A27;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @keyframes marquee {

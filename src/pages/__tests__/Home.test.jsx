@@ -24,6 +24,20 @@ test('renders only featured projects in the highlight strip', () => {
   expect(screen.queryByText('Guia Castanhal Online')).not.toBeInTheDocument()
 })
 
+test('uses a consistent mobile/tablet/desktop breakpoint pattern in the hero layout', () => {
+  renderHome()
+
+  const main = document.querySelector('main')
+  expect(main.className).toContain('px-4')
+  expect(main.className).toContain('sm:px-6')
+  expect(main.className).toContain('lg:px-8')
+
+  const heroHeading = screen.getByRole('heading', { name: /alícia maia/i })
+  expect(heroHeading.className).toContain('text-5xl')
+  expect(heroHeading.className).toContain('sm:text-6xl')
+  expect(heroHeading.className).toContain('md:text-8xl')
+})
+
 test('"Ver todos os projetos" link points to /projetos', () => {
   renderHome()
   expect(screen.getByRole('link', { name: /ver todos os projetos/i }))
