@@ -1,0 +1,26 @@
+{
+  "slug": "servico-de-pagamento",
+  "title": "Serviço de pagamento",
+  "role": "QA em CI/CD",
+  "shortDesc": "Projeto focado em automação de testes e pipeline de integração contínua para validar a qualidade da aplicação em cada entrega.",
+  "coverImage": "/images/projects/testes-de-classe-cover.png",
+  "date": "2026",
+  "featured": true,
+  "tags": ["QA"],
+  "tech": ["GitHub Actions", "CI/CD"],
+  "color": "#A81C24",
+  "icon": "Workflow",
+  "context": "Este projeto foi desenvolvido com foco em qualidade de software e entrega contínua, exercitando a validação automatizada de fluxos críticos em um ambiente de desenvolvimento iterativo.",
+  "challenge": "Garantir que a aplicação fosse testada de forma automatizada e consistente em cada mudança, reduzindo riscos de regressão e aumentando a confiança nas entregas sem depender apenas de validação manual.",
+  "solution": "Estruturei a automação de testes com foco em CI/CD, criando um fluxo de execução contínua para validar a aplicação em cenário de integração e entrega, com atenção especial à cobertura de cenários relevantes e à estabilidade da pipeline.",
+  "metrics": [
+    "Fluxos críticos automatizados para validação contínua",
+    "Processo orientado a CI/CD para reduzir regressões",
+    "Validação após cada pullrequest"
+  ],
+  "learned": "O projeto reforçou a importância de integrar qualidade no ciclo de desenvolvimento desde o início. Quando testes são executados de forma contínua e automatizada, a equipe ganha mais velocidade, menos retrabalho e maior previsibilidade nas entregas.",
+  "links": {
+    "github": "https://github.com/Ali-Maia/testes_de_classe",
+    "demo": null
+  }
+}

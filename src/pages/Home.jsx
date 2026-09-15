@@ -17,7 +17,7 @@ const brutalistButton =
 
 const skills = [
   'Cypress', 'Playwright', 'K6', 'JavaScript',
-  'TypeScript', 'Mocha / Chai', 'Postman / Swagger', 'Git',
+  'Robot Framework', 'Mocha / Chai', 'Postman / Swagger', 'Git', 'CI/CD',
 ]
 
 const Home = () => {

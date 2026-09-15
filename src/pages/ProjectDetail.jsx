@@ -17,6 +17,19 @@ const ProjectDetail = () => {
     context, challenge, solution, metrics, learned, links = {},
   } = project
 
+  const normalizedMetrics = (metrics ?? [])
+    .map((metric, index) => {
+      if (typeof metric === 'string') {
+        return { label: `Métrica ${index + 1}`, value: metric }
+      }
+
+      return {
+        label: metric?.label ?? `Métrica ${index + 1}`,
+        value: metric?.value ?? metric?.label ?? '',
+      }
+    })
+    .filter(metric => metric.value && String(metric.value).trim())
+
   return (
     <div className={`${responsiveShell} pb-20 pt-8`}>
       <Link
@@ -71,12 +84,19 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      {metrics.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          {metrics.map(m => (
-            <div key={m.label} className="bg-[#181818] text-[#F5F1DF] p-5 sm:p-6 text-center">
-              <div className="text-2xl sm:text-3xl font-black text-[#DBA538]">{m.value}</div>
-              <div className="text-[10px] sm:text-xs uppercase font-bold mt-1">{m.label}</div>
+      {normalizedMetrics.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+          {normalizedMetrics.map((m, index) => (
+            <div
+              key={`${m.label}-${index}`}
+              className={`${brutalistBox} p-3 sm:p-4 text-left ${index % 2 === 0 ? 'bg-[#F4CDBC] text-[#181818]' : 'bg-[#DBA538] text-[#181818]'}`}
+            >
+              <div className="text-[9px] sm:text-[10px] uppercase font-black tracking-[0.18em] mb-2 opacity-80">
+                {m.label}
+              </div>
+              <div className="text-xs sm:text-sm font-bold leading-relaxed">
+                {m.value}
+              </div>
             </div>
           ))}
         </div>

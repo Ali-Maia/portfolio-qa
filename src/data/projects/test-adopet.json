@@ -11,8 +11,8 @@
   "color": "#F4CDBC",
   "icon": "Monitor",
   "context": "O Adopet é uma plataforma web de adoção de animais. O projeto teve como objetivo automatizar os principais fluxos críticos da aplicação para garantir a integridade funcional a cada nova versão.",
-  "challenge": "Cobrir os fluxos de cadastro, autenticação e navegação de forma robusta, além de garantir que mensagens de erro adequadas fossem exibidas para entradas inválidas — tudo integrado a um pipeline de CI.",
-  "solution": "Automação E2E com Cypress estruturada por fluxo de usuário, com integração contínua via GitHub Actions para execução automática dos testes a cada push no repositório.",
+  "challenge": "Cobrir os fluxos de cadastro, autenticação e navegação de forma robusta, além de garantir que mensagens de erro adequadas fossem exibidas para entradas inválida.",
+  "solution": "Automação E2E com Cypress estruturada por fluxo de usuário, com foco em validação de cadastro, login, navegação e tratamento de erros em cenários reais de uso.",
   "metrics": [],
   "learned": null,
   "links": {

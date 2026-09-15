@@ -10,11 +10,11 @@
   "tech": ["QA Manual", "Automação"],
   "color": "#DBA538",
   "icon": "Smartphone",
-  "context": "Preencha com o contexto e objetivo do projeto Guia Castanhal.",
-  "challenge": "Preencha com o principal desafio técnico enfrentado.",
-  "solution": "Preencha com a solução adotada para resolver o desafio.",
+  "context": "O projeto Castanhal On consistiu em uma plataforma digital voltada à divulgação, mobilidade e acesso à informação da cidade de Castanhal, com foco em tornar os serviços e conteúdos mais acessíveis ao público local. Como responsável pela qualidade, atuei diretamente na garantia de que a experiência digital fosse estável, funcional e útil para os usuários finais.",
+  "challenge": "O principal desafio foi validar a qualidade da plataforma em cenários reais de uso, garantindo que a navegação, a usabilidade e a consistência das informações fossem preservadas em diferentes fluxos e dispositivos. Também era fundamental identificar e reportar defeitos com clareza, priorizar correções e colaborar com o time para evitar impactos na experiência do usuário e na entrega do produto.",
+  "solution": "A solução foi baseada em uma rotina de testes manuais, exploratórios e de regressão, com foco em validar comportamento, usabilidade, compatibilidade e estabilidade da plataforma. Também realizei a documentação detalhada de incidentes utilizando o Jira, com passos de reprodução, evidências e impacto, além de manter comunicação direta com desenvolvimento para negociar prazos, priorizar ajustes e validar correções em um ambiente ágil.",
   "metrics": [],
-  "learned": null,
+  "learned": "Essa atuação reforçou a importância da qualidade como parte central da entrega de valor ao usuário. A combinação entre atenção aos detalhes, comunicação objetiva e documentação precisa torna o processo de QA essencial para reduzir riscos, melhorar a experiência do cliente e fortalecer a confiança no produto.",
   "links": {
     "github": null,
     "demo": "https://castanhalon.com.br/"

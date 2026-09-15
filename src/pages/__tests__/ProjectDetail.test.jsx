@@ -31,6 +31,11 @@ test('renders context, challenge and solution blocks', () => {
   expect(screen.getAllByText(/solução/i).length).toBeGreaterThan(0)
 })
 
+test('renders string-based metrics without breaking the layout', () => {
+  renderDetail('servico-de-pagamento')
+  expect(screen.getByText(/fluxos críticos automatizados/i)).toBeInTheDocument()
+})
+
 test('hides metrics section when metrics array is empty', () => {
   renderDetail('bookcart') // bookcart.json has metrics: []
   // Labels inside metric blocks should not be present
